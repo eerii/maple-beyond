@@ -1,6 +1,6 @@
 {
   "name": "maple",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -14,9 +14,9 @@
     "commit:patch": "npm version patch -no-git-tag-version --force && git add . && git commit -m",
     "commit:minor": "npm version minor -no-git-tag-version --force && git add . && git commit -m",
     "commit:mayor": "npm version mayor -no-git-tag-version --force && git add . && git commit -m",
-    "postcommit:patch": "git push origin main",
-    "postcommit:minor": "git push origin main",
-    "postcommit:mayor": "git push origin main"
+    "postcommit:patch": "git push",
+    "postcommit:minor": "git push",
+    "postcommit:mayor": "git push"
   },
   "dependencies": {
     "next": "10.0.7",
