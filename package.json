@@ -1,11 +1,22 @@
 {
   "name": "maple",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "",
+    "precommit:patch": "npm run test",
+    "precommit:minor": "npm run test",
+    "precommit:mayor": "npm run test",
+    "commit": "npm run commit:patch",
+    "commit:patch": "npm version patch -no-git-tag-version --force && git add . && git commit -m",
+    "commit:minor": "npm version minor -no-git-tag-version --force && git add . && git commit -m",
+    "commit:mayor": "npm version mayor -no-git-tag-version --force && git add . && git commit -m",
+    "postcommit:patch": "git push origin main",
+    "postcommit:minor": "git push origin main",
+    "postcommit:mayor": "git push origin main"
   },
   "dependencies": {
     "next": "10.0.7",
