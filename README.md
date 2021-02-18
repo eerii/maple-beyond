@@ -6,13 +6,13 @@ Every aspect of **maple** 🍁 has been carefully designed to be simple and acce
 
 **maple** 🍁, as MOOSE, is an acronym of "Most Attractive, Polished and Lovely Experience", but if we're being honest, it was a bit of a stretch to fit with the theme, and we believe only the users can help it become what it's name implies. *blueJAY* 🕊 on the other hand has a more beautiful meaning, "Join All of You", because at MOOSE we work to create bridges between people, to enable everyone to share their talents ✨. We are so excited to see what you will make of it!
 
-## status
+## status
 
 We are workng hard in making MOOSE available. We currenly have a minimum viable product but we are working in refining it before a public beta. However, you can already sign up in https://moosehour.com to be the first one to try it!
 
 This will be the thirds and final iteration before the beta (**maple** *beyond*). A lot of changes and polish are going into it, and we are making it super reliable, fast and accesible, both to use and to code. Please hang tight, MOOSE is coming soon!
 
-## credits and thanks
+## credits and thanks
 
 MOOSE is made by an awesome team from all around the world!
 
