@@ -1,6 +1,11 @@
 import { Button } from '@chakra-ui/react'
 import { ThemeType } from '../pages/_app'
 
+/*
+    THEME BUTTON
+    Switches the theme when it is pressed
+*/
+
 interface Props {
     /*  Value of the current theme */
     theme: ThemeType,

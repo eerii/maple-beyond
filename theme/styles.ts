@@ -1,24 +1,37 @@
+/*
+	GLOBAL STYLES
+	- globalStyle applies to all themes
+	- theme specific styles
+*/
+
 const globalStyle = {
-	a: {
-		color: "moose.500",
-	}
+
 }
 
 const lightStyle = {
-	p: {
-		color: "moose.100"
+	body: {
+		color: "moose.800"
+	},
+	h2: {
+		color: "moose.500"
 	}
 }
 
 const darkStyle = {
-	p: {
-		color: "moose.900"
+	body: {
+		color: "maple.50"
+	},
+	h2: {
+		color: "maple.500"
 	}
 }
 
 const mooseStyle = {
-	p: {
-		color: "moose.600"
+	body: {
+		color: "maple.50"
+	},
+	h2: {
+		color: "maple.500"
 	}
 }
 

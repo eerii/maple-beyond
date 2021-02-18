@@ -2,8 +2,10 @@ import { useEffect, useState } from 'react'
 import type { AppProps } from 'next/app'
 
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import { Global } from "@emotion/react"
 
 import theme from '../theme/index'
+import fonts from "../theme/font-face"
 
 import { init } from '@socialgouv/matomo-next'
 
@@ -42,9 +44,11 @@ const App = ({ Component, pageProps }: AppProps) => {
 
 	return (
 		<ChakraProvider theme={extendTheme(theme[currentTheme])}>
+			<Global styles={fonts} />
 			{/* This is the body of the different pages of the site, wrap it with anything */}
 			<Component 
 				{...pageProps}
+				//Pass the control to set and view the current theme
 				theme={currentTheme}
 				setTheme={setCurrentTheme}
 			/>

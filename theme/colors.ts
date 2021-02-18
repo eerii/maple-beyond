@@ -1,3 +1,8 @@
+/*
+    COLOR PALETTES
+    Add to Typescript Autocomplete with npm run gen:theme-types
+*/
+
 const colors = {
     mb: '#4960F9',
     moose: {
