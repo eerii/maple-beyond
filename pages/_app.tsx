@@ -1,9 +1,11 @@
 import { useEffect } from 'react'
 import type { AppProps } from 'next/app'
 
-import { ChakraProvider } from "@chakra-ui/react"
+import { ChakraProvider } from '@chakra-ui/react'
 
-import { init } from "@socialgouv/matomo-next"
+import theme from '../theme/index'
+
+import { init } from '@socialgouv/matomo-next'
 
 /*
 	APP
@@ -24,7 +26,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 	}, [])
 
 	return (
-		<ChakraProvider>
+		<ChakraProvider theme={theme}>
 			{/* This is the body of the different pages of the site, wrap it with anything */}
 			<Component {...pageProps} />
 		</ChakraProvider>

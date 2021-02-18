@@ -26,7 +26,7 @@ const Home: React.FC = () => {
 
 							<Stack spacing={2} mb={12}>
 								<Heading as="h2" size="2xl">Bank time,</Heading>
-								<Heading as="h2" size="2xl">Exchange Purpose</Heading>
+								<Heading as="h2" size="2xl" textColor="my">Exchange Purpose</Heading>
 							</Stack>
 
 							<Stack spacing={4}>
