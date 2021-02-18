@@ -1,12 +1,24 @@
 import Head from 'next/head'
-import { Box, Center, Flex, Stack, Text, Heading } from "@chakra-ui/react"
+import { SetStateAction, useState } from 'react'
+import { Box, Center, Flex, Stack, Text, Heading, Button } from '@chakra-ui/react'
+import { ThemeType } from './_app'
+import ThemeButton from '../components/ThemeButton'
+
 
 /*
 	HOME PAGE
 	Accessible at https://moosehour.com
 */
 
-const Home: React.FC = () => {
+interface Props {
+	/*  Value of the current theme */
+    theme: ThemeType,
+	/*	Set theme function, inherited from _app
+		Takes a ThemeType as a parameter ("light", "dark" or "moose") and changes the theme state	*/
+	setTheme: React.Dispatch<React.SetStateAction<ThemeType>>
+}
+
+const Home : React.FC<Props> = ( props ) => {
 	return (
 		<div>
 			<Head>
@@ -34,6 +46,8 @@ const Home: React.FC = () => {
 								<Text fontSize="xl">We believe that when you share, it should always be fair.</Text>
 								<Text fontSize="xl">Sign up below to join MOOSE Beta.</Text>
 							</Stack>
+
+							<ThemeButton {...props}/>
 						</Box>
 					</Center>
 

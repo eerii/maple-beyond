@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document'
+import theme from "../theme/index"
 
 /*
 	DOCUMENT
@@ -22,8 +23,8 @@ class MyDocument extends Document {
 				<meta name="MOOSE" content="Time Banking App"/>
 			</Head>
 			<body>
-				<Main />
-				<NextScript />
+				<Main/>
+				<NextScript/>
 			</body>
 			</Html>
 		)
