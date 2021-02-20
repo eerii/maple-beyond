@@ -5,7 +5,9 @@
 */
 
 const globalStyle = {
-
+	p: {
+		fontWeight: 500
+	}
 }
 
 const lightStyle = {
