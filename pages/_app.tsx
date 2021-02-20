@@ -5,7 +5,7 @@ import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import { Global } from "@emotion/react"
 
 import theme from '../theme/index'
-import fonts from "../theme/font-face"
+import fonts from "../theme/properties/font-face"
 
 import { init } from '@socialgouv/matomo-next'
 

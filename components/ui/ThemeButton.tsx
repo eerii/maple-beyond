@@ -1,5 +1,5 @@
 import { Button } from '@chakra-ui/react'
-import { ThemeType } from '../pages/_app'
+import { ThemeType } from '../../pages/_app'
 
 /*
     THEME BUTTON

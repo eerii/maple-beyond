@@ -1,10 +1,9 @@
 import Head from 'next/head'
-import { SetStateAction, useState } from 'react'
 import { Box, Center, Flex, Stack, Text, Heading } from '@chakra-ui/react'
 import { ThemeType } from './_app'
 
-import Background from '../components/Background'
-import ThemeButton from '../components/ThemeButton'
+import Background from '../components/ui/Background'
+import ThemeButton from '../components/ui/ThemeButton'
 
 /*
 	HOME PAGE
@@ -35,7 +34,7 @@ const Home : React.FC<Props> = ( props ) => {
 						{/* TODO: Main Menu */}
 
 						{/* Landing message, it expands the remaining portion of the screen */}
-						<Center flexGrow={1}>
+						<Center flexGrow={1} m={10}>
 							<Box w="80vw">
 								<Heading as="h1" size="3xl" mb={8} fontFamily="Moose Title">MOOSE</Heading>
 

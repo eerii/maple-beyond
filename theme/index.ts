@@ -1,8 +1,10 @@
 import colors from './colors'
 import styles from './styles'
-import { fonts, fontWeights } from './fonts'
+import { fonts, fontWeights } from './properties/fonts'
+import shadows from './properties/shadows'
 
 import BoxStyle from './components/Box'
+import ButtonStyle from './components/Button'
 
 /*
 	THEME ENTRY POINT
@@ -28,8 +30,12 @@ const theme = {
 		components: {
 			Box: {
 				...BoxStyle.light
+			},
+			Button: {
+				...ButtonStyle.light
 			}
-		}
+		},
+		shadows: {...shadows.light}
 	},
 	dark: {
 		...global,
@@ -42,8 +48,12 @@ const theme = {
 		components: {
 			Box: {
 				...BoxStyle.dark
+			},
+			Button: {
+				...ButtonStyle.dark
 			}
-		}
+		},
+		shadows: {...shadows.dark}
 	}, 
 	moose: {
 		...global,
@@ -56,8 +66,12 @@ const theme = {
 		components: {
 			Box: {
 				...BoxStyle.moose
+			},
+			Button: {
+				...ButtonStyle.moose
 			}
-		}
+		},
+		shadows: {...shadows.moose}
 	}
 }
 

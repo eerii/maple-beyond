@@ -3,8 +3,8 @@
 */
 
 const fonts = {
-    body: "Moose, system-ui, sans-serif",
-    heading: "Moose, system-ui, sans-serif",
+    body: "Moose, Lato, Helvetica, system-ui, sans-serif",
+    heading: "Moose, Lato, Helvetica, system-ui, sans-serif",
     mono: "Menlo, monospace",
 }
 
